@@ -1,0 +1,14 @@
+
+@layer components {
+  .tab {
+    @apply heading-s text-grey rounded-lg py-3 px-7 hover:text-purple flex gap-2;
+
+    &.tab-active {
+      @apply bg-purple-light text-purple;
+    }
+
+    svg {
+      @apply aspect-square w-5 fill-current;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@layer components {
+  .button {
+    @apply heading-s rounded-lg py-3 px-7 disabled:opacity-25;
+  }
+
+  .button[data-style=primary] {
+    @apply bg-purple text-white hover:bg-purple-hover focus:bg-purple-hover disabled:bg-purple;
+  }
+
+  .button[data-style=secondary] {
+    @apply bg-transparent border border-purple text-purple hover:bg-purple-light focus:bg-purple-light disabled:bg-transparent;
+  }
+}

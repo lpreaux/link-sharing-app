@@ -1,0 +1,60 @@
+<nav class="flex justify-between align-middle p-4 pl-6 bg-white md:rounded-xl">
+  <div class="image-wrapper my-auto">
+    <img
+      alt="Logo"
+      class="aspect-square w-8 md:hidden"
+      height="32"
+      ngSrc="/assets/images/logo-devlinks-small.svg"
+      priority
+      width="32" />
+    <img
+      alt="Logo"
+      class="hidden md:block"
+      height="40"
+      ngSrc="assets/images/logo-devlinks-large.svg"
+      priority
+      width="183" />
+  </div>
+  <ul class="flex align-middle">
+    <li class="flex col justify-center">
+      <a
+        [routerLink]="['/', 'links']"
+        class="tab"
+        routerLinkActive="tab-active">
+        <svg viewBox="0 0 16 16">
+          <use
+            height="16"
+            href="/assets/images/icon-link.svg#icon"
+            width="16" />
+        </svg>
+        <span class="hidden md:inline">Links</span>
+      </a>
+    </li>
+    <li class="flex col justify-center">
+      <a
+        [routerLink]="['/', 'profile']"
+        class="tab"
+        routerLinkActive="tab-active">
+        <svg viewBox="0 0 21 20">
+          <use
+            height="20"
+            href="/assets/images/icon-profile-details-header.svg#icon"
+            width="21" />
+        </svg>
+        <span class="hidden md:inline">Profile Details</span>
+      </a>
+    </li>
+  </ul>
+
+  <button class="button" data-style="secondary">
+    <svg
+      class="aspect-square w-5 fill-current inline md:hidden"
+      viewBox="0 0 20 20">
+      <use
+        height="20"
+        href="/assets/images/icon-preview-header.svg#icon"
+        width="20" />
+    </svg>
+    <span class="hidden md:inline">Preview</span>
+  </button>
+</nav>
