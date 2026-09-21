@@ -1,4 +1,4 @@
-<nav class="flex justify-between align-middle p-4 pl-6 bg-white md:rounded-xl">
+<nav class="flex justify-between bg-white p-4 pl-6 align-middle md:rounded-xl">
   <div class="image-wrapper my-auto">
     <img
       alt="Logo"
@@ -16,7 +16,7 @@
       width="183" />
   </div>
   <ul class="flex align-middle">
-    <li class="flex col justify-center">
+    <li class="col flex justify-center">
       <a
         [routerLink]="['/', 'links']"
         class="tab"
@@ -30,7 +30,7 @@
         <span class="hidden md:inline">Links</span>
       </a>
     </li>
-    <li class="flex col justify-center">
+    <li class="col flex justify-center">
       <a
         [routerLink]="['/', 'profile']"
         class="tab"
@@ -48,7 +48,7 @@
 
   <button class="button" data-style="secondary">
     <svg
-      class="aspect-square w-5 fill-current inline md:hidden"
+      class="inline aspect-square w-5 fill-current md:hidden"
       viewBox="0 0 20 20">
       <use
         height="20"
